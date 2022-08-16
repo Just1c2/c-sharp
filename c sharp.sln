@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c sharp", "c sharp\c sharp.csproj", "{32274085-66D3-4512-9240-D7FC9FFD7685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "c sharp", "c sharp\c sharp.csproj", "{32274085-66D3-4512-9240-D7FC9FFD7685}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataType", "DataType\DataType.csproj", "{F5CB096A-4A1D-4962-B683-905CC66F9875}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueType", "ValueType\ValueType.csproj", "{C196F399-E316-42F9-9216-C028C6AC06BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceType", "ReferenceType\ReferenceType.csproj", "{20C7B1BD-7F1F-4BBF-95AB-E38C96E84260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceType", "ReferenceType\ReferenceType.csproj", "{20C7B1BD-7F1F-4BBF-95AB-E38C96E84260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberFormat", "NumberFormat\NumberFormat.csproj", "{5D9C7AAC-5597-4DA2-98D0-5A36C0A2F25A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberFormat", "NumberFormat\NumberFormat.csproj", "{5D9C7AAC-5597-4DA2-98D0-5A36C0A2F25A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeFormat", "DateTimeFormat\DateTimeFormat.csproj", "{524C9F3B-98CE-43B5-BAAC-C995E91B0D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeFormat", "DateTimeFormat\DateTimeFormat.csproj", "{524C9F3B-98CE-43B5-BAAC-C995E91B0D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEach", "ForEach\ForEach.csproj", "{12EDA32D-E03D-4FE8-8449-2BF8FB990113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectArray", "ObjectArray\ObjectArray.csproj", "{1AC7D472-0DDE-4F4F-B1ED-6B9A98CF6341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayClass", "ArrayClass\ArrayClass.csproj", "{C68DEAE0-3BD8-4653-9086-41301C5C6A6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{524C9F3B-98CE-43B5-BAAC-C995E91B0D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{524C9F3B-98CE-43B5-BAAC-C995E91B0D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{524C9F3B-98CE-43B5-BAAC-C995E91B0D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12EDA32D-E03D-4FE8-8449-2BF8FB990113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12EDA32D-E03D-4FE8-8449-2BF8FB990113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12EDA32D-E03D-4FE8-8449-2BF8FB990113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12EDA32D-E03D-4FE8-8449-2BF8FB990113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC7D472-0DDE-4F4F-B1ED-6B9A98CF6341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC7D472-0DDE-4F4F-B1ED-6B9A98CF6341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC7D472-0DDE-4F4F-B1ED-6B9A98CF6341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC7D472-0DDE-4F4F-B1ED-6B9A98CF6341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68DEAE0-3BD8-4653-9086-41301C5C6A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68DEAE0-3BD8-4653-9086-41301C5C6A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68DEAE0-3BD8-4653-9086-41301C5C6A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68DEAE0-3BD8-4653-9086-41301C5C6A6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

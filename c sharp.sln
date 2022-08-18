@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Window", "Window\Window.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort", "Sort\Sort.csproj", "{7D544F67-05FE-4E0B-B804-D32A00780BF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricObjectDemo", "GeometricObjectDemo\GeometricObjectDemo.csproj", "{ECAA094E-49B3-4060-BE4C-A3FDA1F53950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexersDemo", "IndexersDemo\IndexersDemo.csproj", "{AD02B6F0-A7DC-42F6-8204-8D9BC3EF0D50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{7D544F67-05FE-4E0B-B804-D32A00780BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D544F67-05FE-4E0B-B804-D32A00780BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D544F67-05FE-4E0B-B804-D32A00780BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAA094E-49B3-4060-BE4C-A3FDA1F53950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAA094E-49B3-4060-BE4C-A3FDA1F53950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAA094E-49B3-4060-BE4C-A3FDA1F53950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAA094E-49B3-4060-BE4C-A3FDA1F53950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD02B6F0-A7DC-42F6-8204-8D9BC3EF0D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD02B6F0-A7DC-42F6-8204-8D9BC3EF0D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD02B6F0-A7DC-42F6-8204-8D9BC3EF0D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD02B6F0-A7DC-42F6-8204-8D9BC3EF0D50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

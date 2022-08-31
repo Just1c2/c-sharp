@@ -3,32 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections;
 
 namespace EmployeeManagment
 {
-    class Employee
+    public sealed class Employee: Person, IRole
     {
-        ArrayList emp = new ArrayList();
-
-        private int id;
-        private string name;
-        private int age;
-        private string salary;
-
-        public Employee( int id, string name, int age, string salary)
+        public string ID { get; set; }
+        public override string FirstName { get => firstName; set => firstName = value; }
+        public override string LastName { get => lastName; set => lastName = value; }
+        public override string Email { get => email; set => email = value; }
+        public override string Phone { get => phone; set => phone = value }
+        public override DateTime Dateofbirth { get => dateofbirth; set => dateofbirth = value; }
+        public DateTime JoiningDateTime { get; set; }
+        public string Designation { get; set; }
+        public Employee(string id, string firstName, string lastName, string email, string phone, DateTime DOB, DateTime joiningDateTime, int designation)
         {
-            this.id = id;
-            this.name = name;
-            this.age = age;
-            this.salary = salary;
+            this.ID = id;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Email = email;
+            this.Phone = phone;
+            this.Dateofbirth = DOB;
+            this.JoiningDateTime = joiningDateTime;
+            this.Designation = Enum.GetName(typeof(Designation), designation);
         }
 
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string Salary { get; set; }
+        public override string GetFullName()
+        {
+            return firstName + "   " + lastName;
+        }
 
-
-    } 
+        public override string GetAge()
+        {
+            TimeSpan age = DateTime.Now - dateofbirth;
+            int years = age.Days / 365;
+            int month = (age.Days - )
+        }
+    }
 }

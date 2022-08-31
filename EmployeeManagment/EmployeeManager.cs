@@ -15,23 +15,26 @@ namespace EmployeeManagement
         public static void Main(string[] args)
         {
             Menu();
-            Console.WriteLine("Enter your choice: ");
             string choice = Console.ReadLine();
-            while(true)
+            while (true)
             {
                 switch (choice)
                 {
                     case "1":
                         Add();
+                        Menu();
                         break;
                     case "2":
                         Delete();
+                        Menu();
                         break;
                     case "3":
                         Modify();
+                        Menu();
                         break;
                     case "4":
                         Display();
+                        Menu();
                         break;
                     case "5":
                         Environment.Exit(0);
@@ -41,12 +44,15 @@ namespace EmployeeManagement
 
         }
         public static void Menu() {
+            
             Console.WriteLine("-----Menu-----");
             Console.WriteLine("1. Add");
             Console.WriteLine("2. Delete");
             Console.WriteLine("3. Modify");
             Console.WriteLine("4.Display");
             Console.WriteLine("5. Exit");
+            Console.WriteLine("Enter your choice: ");
+           
         }
         public static void Add()
         {
@@ -64,10 +70,10 @@ namespace EmployeeManagement
 
         public static void Delete()
         {
-            int id
+            int id;
             Console.WriteLine("Enter employee's id: ");
             id = Convert.ToInt32(Console.ReadLine());
-            emp.RemoveAt(id);
+            emp.Remove(id);
         }
 
         public static void Modify()
@@ -99,32 +105,34 @@ namespace EmployeeManagement
                 Console.WriteLine(" " + i);
             }
         }
-        class Employee
+        
+    }
+    class Employee
+    {
+
+
+        private int id;
+        private string name;
+        private int age;
+        private string salary;
+
+        public Employee(int id, string name, int age, string salary)
         {
-
-
-            private int id;
-            private string name;
-            private int age;
-            private string salary;
-
-            public Employee(int id, string name, int age, string salary)
-            {
-                id = Id;
-                name = Name;
-                age = Age;
-                salary = Salary;
-            }
-
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public int Age { get; set; }
-            public string Salary { get; set; }
-
-            public override string ToString()
-            {
-                return String.Format("Id: {0}  Name: {1},  Age: {2},  Salary: {3}", id, name, age, salary);
-            }
-
+            id = Id;
+            name = Name;
+            age = Age;
+            salary = Salary;
         }
-    } }
+
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Salary { get; set; }
+
+        public override string ToString()
+        {
+            return String.Format("Id: {0}  Name: {1},  Age: {2},  Salary: {3}", id, name, age, salary);
+        }
+
+    }
+}

@@ -37,7 +37,16 @@ namespace EmployeeManagment
         {
             TimeSpan age = DateTime.Now - dateofbirth;
             int years = age.Days / 365;
-            int month = (age.Days - )
+            int month = (age.Days - years * 365) / 30;
+            int days = (age.Days - years * 365 - month * 30);
+
+            return years.ToString() + "Years" + month.ToString() + " Months " + days.ToString() + " Days ";
+        }
+
+        public string[] GetRoles(string role)
+        {
+            string[] roles = role.Split(',');
+            return roles;
         }
     }
 }
